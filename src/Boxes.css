@@ -1,0 +1,36 @@
+.Boxes{
+    width: 930px;
+    margin-left: 50px;
+    margin-top: 250px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Boxes-separate{
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.Boxes-list{
+    width: 100%;
+    text-align: center;
+    display: table-cell;
+}
+.Boxes-button{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+.Boxes-button button{
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px black solid;
+}
+.Boxes-button button:hover{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}

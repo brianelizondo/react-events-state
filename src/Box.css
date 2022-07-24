@@ -1,0 +1,64 @@
+.Box{
+    width: 100px;
+    height: 100px;
+    border: 2px black solid;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    transition: background-color 500ms ease-out;
+}
+.Box-black{
+    background-color: black;
+}
+.Box-gray{
+    background-color: gray;
+}
+.Box-red{
+    background-color: red;
+}
+.Box-blue{
+    background-color: blue;
+}
+.Box-yellow{
+    background-color: yellow;
+}
+.Box-green{
+    background-color: green;
+}
+.Box-orange{
+    background-color: orange;
+}
+.Box-brown{
+    background-color: brown;
+}
+.Box-pink{
+    background-color: pink;
+}
+.Box-violet{
+    background-color: violet;
+}
+.Box-purple{
+    background-color: purple;
+}
+.Box-goldenrod{
+    background-color: goldenrod;
+}
+.Box-aqua{
+    background-color: aqua;
+}
+.Box-magenta{
+    background-color: magenta;
+}
+.Box-lightgreen{
+    background-color: lightgreen;
+}
+.Box-hotpink{
+    background-color: hotpink;
+}
+.Box-turquoise{
+    background-color: turquoise;
+}
+.Box-white{
+    background-color: white;
+}
