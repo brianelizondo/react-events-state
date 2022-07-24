@@ -1,12 +1,19 @@
 .Box{
     width: 100px;
-    height: 100px;
+    height: 95px;
     border: 2px black solid;
     border-radius: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
     float: left;
     transition: background-color 500ms ease-out;
+    
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 5px;
+    text-shadow: 1px 1px black;
+    text-transform: uppercase;
 }
 .Box-black{
     background-color: black;

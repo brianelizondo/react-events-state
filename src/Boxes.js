@@ -6,18 +6,26 @@ function randomColor(colors){
     const randomIDX = Math.floor(Math.random() * colors.length);
     return colors[randomIDX];
 }
+function showChanged(box){
+    box.append("changed!");
+    setTimeout(() => {
+        box.removeChild(box.firstChild);
+    }, "1000");
+}
 
 function Boxes(props){
+    const { colors, num_boxes } = props;
     const boxList = [];
-    for(let i = 1; i <= 16; i++){
-        boxList.push(<Box id={ i } color={ randomColor(props.colors) } />);
+    for(let i = 1; i <= num_boxes; i++){
+        boxList.push(<Box id={ i } color={ randomColor(colors) } />);
     }
 
     function changeBox(){
-        const boxID = Math.floor(Math.random() * 16 ) + 1;
+        const boxID = Math.floor(Math.random() * num_boxes ) + 1;
         const box = document.getElementById(`box-${boxID}`);
         box.classList.remove(box.classList[1]);
-        box.classList.add(`Box-${ randomColor(props.colors) }`);
+        box.classList.add(`Box-${ randomColor(colors) }`);
+        showChanged(box);
     }
 
     return (
@@ -53,7 +61,8 @@ Boxes.defaultProps = {
         "hotpink",
         "turquoise",
         "white"
-    ]
+    ],
+    num_boxes: 8
 }
 
 export default Boxes;
