@@ -11,6 +11,10 @@
     text-align: center;
     display: flex;
     align-items: center;
+    transition: background-color 500ms ease-out;
+}
+.EightBall-ball:hover{
+    cursor: pointer;
 }
 .EightBall-answer{
     color: white;
@@ -30,4 +34,39 @@
 }
 .EightBall-red{
     background-color: red;
+}
+
+.EightBall-button{
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+.EightBall-button button{
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 2px black solid;
+}
+.EightBall-button button:hover{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
+
+.EightBall-record{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+}
+.EightBall-record-green{
+    color: green;
+}
+.EightBall-record-goldenrod{
+    color: goldenrod;
+}
+.EightBall-record-red{
+    color: red;
 }

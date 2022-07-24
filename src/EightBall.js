@@ -8,12 +8,30 @@ function getAnswer(answers){
 
 function EightBall(props){
     const [answer, setAnswer] = useState({ msg: "Think of a Question", color: "black" });
+    const [records, setRecord] = useState({ green: 0, goldenrod: 0, red: 0 });
+    
     const ballClassColor = `EightBall-ball EightBall-${ answer.color }`;
+    for(const [color, count] of Object.entries(records)) {
+        records[color] = answer.color === color ? records[color] + 1 : records[color];
+    }
+
+    function resetBall(){
+        setAnswer({ msg: "Think of a Question", color: "black" });
+        setRecord({ green: 0, goldenrod: 0, red: 0 });
+    }
     
     return (
         <div className='EightBall'>
             <div className={ ballClassColor } onClick={() => setAnswer(getAnswer(props.answers))}>
                 <div className='EightBall-answer'>{ answer.msg }</div>
+            </div>
+            <div className='EightBall-button'>
+                <button onClick={() => resetBall()}>Reset</button>
+            </div>
+            <div className='EightBall-record'>
+                <span className='EightBall-record-green'><b>Green:</b> { records.green } - </span>
+                <span className='EightBall-record-goldenrod'><b>Goldenrod:</b> { records.goldenrod } - </span>
+                <span className='EightBall-record-red'><b>Red:</b> { records.red }</span>
             </div>
         </div>
     );
