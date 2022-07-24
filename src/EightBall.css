@@ -1,0 +1,33 @@
+.EightBall{
+    width: 500px;
+    height: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px 50px;
+}
+.EightBall-ball{
+    width: 100%;
+    height: 100%;
+    border-radius: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.EightBall-answer{
+    color: white;
+    font-size: 50px;
+    margin:0px auto;
+    width: 300px;
+}
+
+.EightBall-black{
+    background-color: black;
+}
+.EightBall-green{
+    background-color: green;
+}
+.EightBall-goldenrod{
+    background-color: goldenrod;
+}
+.EightBall-red{
+    background-color: red;
+}
